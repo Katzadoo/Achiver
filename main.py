@@ -6,4 +6,4 @@ print(os.listdir())
 data = input('Choose which .zip file you want to extract(Case sensitive): ')
 
 with zipfile.ZipFile(data, 'r') as zipobj:
-	print(zipobj.namelist())
+	print('List of files: ' + str(zipobj.namelist()))
